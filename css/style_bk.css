@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
+/* CSS Document */
+
+@keyframes shang-fadein { 
+    0%   {opacity: 0; transform: scale(1.1);}
+    100% {opacity: 1; transform: scale(1);}
+}
+
+
+
+@keyframes shang-fadein2 { 
+    0%   {opacity: 0; }
+    25%  {opacity: 0; }
+    100% {opacity: 1; }
+}
+
+
+
+@keyframes shang-titl-fadein { 
+    0%   {opacity: 0; transform: scale(0.9);}
+    100% {opacity: 1; transform: scale(1);}
+}
+
+@keyframes shang-titl-fadein-mb { 
+    0%   {opacity: 0; transform: scale(0.9);}
+    100% {opacity: 1; transform: scale(1);}
+}
+
+@keyframes float-object { 
+    0%   {margin-top: 163px; }
+    25%  {margin-top: 168px; }
+    50%  {margin-top: 163px; }
+    75%  {margin-top: 158px; }
+    100%  {margin-top: 163px; }
+}
+
+@keyframes float-object2 { 
+    0%   {margin-top: 183px; }
+    25%  {margin-top: 188px; }
+    50%  {margin-top: 183px; }
+    75%  {margin-top: 178px; }
+    100%  {margin-top: 183px; }
+}
+
+
+@keyframes scale1-9 { 
+    0%   {opacity: 1; transform: scale(1);}
+    50% {opacity: 1; transform: scale(1.05);}
+    100% {opacity: 1; transform: scale(1);}
+}
+
+
+@keyframes title-animate { 
+    0%   {opacity: 1; margin-left: 50px; }
+    100%  {opacity: 1; margin-left: 0px; }
+}
+
+/*@keyframes main-fadein { 
+    0%   {opacity: 0;  }
+    100%  {opacity: 1;  }
+}*/
+
+
+
+#aimate-mov-panel {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 688;
+}
+
+#aimate-mov-panel embed {
+    width: 100%;
+}
+
+#main-animate-panel {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    z-index: 8;
+    opacity: 0;
+    /*animation-name: main-fadein; 
+    animation-duration: 0.8s; 
+    animation-iteration-count: 1;
+    animation-delay: 3s;*/
+}
+
+#animate-road {
+    height: 95vh;
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+}
+#animate-road img {
+    height: 100%;
+    
+}
+
+#animate-title {
+    position: absolute;
+    width: 50%;
+    left: 6%;
+    top: 4vh;
+}
+#animate-title img {
+    width: 100%;
+}
+
+#animate-sub-title {
+    position: absolute;
+    width: 40%;
+    left: 6%;
+    top: 39vh;
+}
+#animate-sub-title img {
+    width: 100%;
+    
+}
+
+#animate-head-bg {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#animate-image-01 {
+    width: 24%;
+    position: absolute;
+    right: 14%;
+    top: 21vh;
+}
+#animate-image-01 img {
+    width: 100%;
+}
+
+#animate-head-bg img {
+    width: 100%;
+}
+
+#background-map {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #c7d0c0;
+}
+
+#background-map img {
+    width: 125%;
+    height: 125%;
+    animation-name: scale1-9; 
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+#footer {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    background-color: #64BAAC;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-right: 16px;
+    z-index: 688;
+}
+
+#footer > img {
+    width: 200px;
+}
+
+/* ------------------如果使用者視窗寬度 <= 768px----------------------- */
+@media screen and (min-width: 768px) and (max-width: 1920px) {
+
+ 
+#animate-road {
+    height: 98vh;
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+}
+#animate-road img {
+    height: 100%;
+    
+}
+    
+#animate-image-01 {
+    width: 23%;
+    position: absolute;
+    right: 12%;
+    top: 20vh;
+}
+#animate-image-01 img {
+    width: 100%;
+}    
+    
+  /* -- END -- */  
+}
+
+
+/* ------------------如果使用者視窗寬度 <= 768px----------------------- */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+
+    
+  /* -- END -- */  
+}
+
